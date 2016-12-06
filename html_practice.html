@@ -1,35 +1,88 @@
+<!-- Must contain HTML, head, body, title, meta description, a, p, div, h, ul, li, table (including thead, td, tbody, tr) and span.
+At the bottom of the page, create a fake survey form that uses the following tags:
+form, select, input type="text", input type="checkbox", input type="radio", input type="submit". -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>My Fake Blog</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Learning about Meta Tags." />
+	<meta name="description" content="Learning html" />
 </head>
 <body>
-	<form name="Contact Us">
-		<label>Your Name: <input type="text" name="name"></label>
-		<label>Your Email address: <textarea name="description"></textarea></label>
-		<p>Pick your favorite food</p>
-		<label><input type="radio" name="food" value="pizza">Pizza</label>
-		<label><input type="radio" name="food" value="Thai">Thai</label>
-		<label><input type="radio" name="food" value="Sushi">Sushi</label>
-		<p>Select odd numbers</p>
-		<label><input type="checkbox" name="number" value="3">3</label>
-		<label><input type="checkbox" name="number" value="4">4</label>
-		<label><input type="checkbox" name="number" value="5">5</label>
-		<label><input type="checkbox" name="number" value="6">6</label>
-		<select name="city">
-			<option value="sunnyvale">Sunnyvale</option>
-			<option value="mountain_view">Mountain View</option>
-			<option value="san_jose">San Jose</option>
+	<h1>Welcome to My Fake Blog</h1>
+	<p>This is my introductory paragraph, where I would explain why I created this website and what the reader might expect to see on my blog. It is a good way to practice what I've learned so far in the Web Fundamentals track at <a href="codingdojo.com">Coding Dojo</a>. The rest of this page will contain Lorem Ipsum gibberish so that I don't have to try to think of a bunch of other things to write about.</p>
+	<h2>Some Stuff About Me</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="something_inline">Ut enim ad minim veniam,</span> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	<p>Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div id="pets">
+		<img width="200" src="https://clipartion.com/wp-content/uploads/2015/11/bulldog-puppy-free-clipart-free-clip-art-images.gif" alt="Bulldog clipart">
+		<h3>Pet Information</h3>
+		<table border="1">
+			<thead>
+				<tr>
+				<th>Pet's name</th>
+				<th>Species</th>
+				<th>Breed</th>
+				<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Mr. Potato Head</td>
+					<td rowspan="2">Dog</td>
+					<td>Bullmastiff</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>Hamlet</td>
+					<td>English Bulldog</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>Twiggy</td>
+					<td>Cat</td>
+					<td>Tortie</td>
+					<td>??</td>
+				</tr>
+			</tbody>
+			</table>
+	</div>
+	<div id="lists">
+		<h3>Places I Have Lived</h3>
+		<ul>
+			<li>Chicago, IL</li>
+			<li>Vancouver, BC</li>
+			<li>St. Louis, MO</li>
+		</ul>
+		<h3>Favorite Foods</h3>
+		<ol>
+			<li>Dumplings</li>
+			<li>Saag Paneer</li>
+			<li>Creme Brulee</li>
+			<li>Tacos</li>
+		</ol>
+	</div>		
+	<form name="survey">
+		<h2 id=survey_head>Survey</h2>
+		<label>Name: <input type="text" name="name"></label>
+		<label>Email address: <input type="Email" name="email"></label>
+		<select name="association">
+			<option value="Student">I am a Dojo student</option>
+			<option value="Instructor"> I am a Dojo instructor</option>
+			<option value="Other">WTF is this "Dojo?"</option>
 		</select>
-		<input type="submit" value="Submit">
+		<p>How did you find this blog?</p>
+		<label><input type="checkbox" name="referrer" value="Dojo">Dojo</label><br>
+		<label><input type="checkbox" name="referrer" value="Google">Google</label><br>
+		<label><input type="checkbox" name="referrer" value="Magic">Magic</label>
+		<p>Please grade the html on this page:</p>
+		<label><input type="radio" name="grade" value="Excellent">It's flawless! I don't see any mistakes.</label><br>
+		<label><input type="radio" name="grade" value="Good">It's great, for a beginner! There are some areas that can be improved.</label><br>
+		<label><input type="radio" name="grade" value="Poor">Ummm, no comment. Keep working on it...</label><br>
+		<input type="submit" value="Submit survey">
 	</form>
 </body>
 </html>
 
-
-
-HTML, head, body, title, meta description, a, p, div, h, ul, li, table (including thead, td, tbody, tr) and span.
-At the bottom of the page, create a fake survey form that uses the following tags:
-form, select, input type="text", input type="checkbox", input type="radio", input type="submit".
