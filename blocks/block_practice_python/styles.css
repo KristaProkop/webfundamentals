@@ -1,0 +1,132 @@
+
+body {
+	width: 970px;
+	background-color: #005580;
+	font-family: Helvetica;
+	font-weight: lighter;
+	text-align: center;
+}
+
+img {
+	width: 400px;
+	display: block;
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4582a1;
+    display: block;
+}
+
+ul.topnav li {
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#intro {
+	display: block;
+}
+
+nav	{
+	width: 24%;
+	line-height: 30px;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+nav ul li a {
+	color: white;
+}
+
+#left_nav {
+	list-style-type: none;
+}
+
+#introduction {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+	font-size: 14px;
+	color: white;
+}
+
+mark {
+	display: block;
+	color: #FFD700;
+	background-color: #005580;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.guides {
+	display: block;
+	background-color: white;
+	padding-top: 20px;
+}
+.guides a {
+	color: #9bc2cf;
+}
+
+
+#getting_started {
+	display: inline-block;
+	position: relative;
+	width: 45%;
+	color: black;
+	border-top: solid #9bc2cf;
+	vertical-align: top;
+	margin-right: 30px;
+}
+
+#applications {
+	display: inline-block;
+	width: 45%;
+	color: black;
+	border-top: solid #9bc2cf;
+}
+
+
+footer {
+    background-color: #4582a1;
+    position: relative;
+    top: -15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-top: 40px;
+    margin-left: -40px;
+    overflow: hidden;
+    display: block;
+}
+
+footer ul li {
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+footer ul li a {
+    /*display: inline;*/
+    color: #9bc2cf;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer span {
+	display: block;
+	font-size: 12px;
+	color: #9bc2cf;
+}
