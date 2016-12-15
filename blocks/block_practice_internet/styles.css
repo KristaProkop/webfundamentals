@@ -38,6 +38,7 @@ h2 {
 	border: 1px black;
 	padding-top: 20px;
 	padding-left: 20px;
+	display: inline-block;
 }
 
 .blue_button {
@@ -84,6 +85,7 @@ h2 {
 .ad {
 	position: relative;
 }
+
 #ad_back {
 	width: 220px;
 	margin-top: 60px;
@@ -105,5 +107,59 @@ h2 {
 	position: absolute;
 	margin-top: 160px;
 	left: 80px;
+}
 
+main {
+	position: absolute;
+	display: inline;
+	top: 200px;
+	left: 300px;
+	width: 650px;
+}
+
+#info_bar {
+	height: 100px;
+	border-bottom: 3px solid gray;
+}
+#home {
+	width: 25px;
+}
+
+#phone {
+	width: 50px;
+	margin-left: 360px;
+}
+
+#servers {
+	width: 300px;
+	margin-left: 170px;
+	margin-top: 10px;
+}
+
+#phone_number {
+	text-align: right;
+	font-size: 30px;
+	margin-top: -65px;
+}
+
+#dns {
+	color: blue;
+}
+
+.body_headings {
+	margin-top: 20px;
+	color: blue;
+	padding-bottom: 10px;
+}
+
+a {
+	color: #00C5CD;
+}
+
+p {
+	padding-bottom: 8px;
+}
+
+li {
+	margin-left: 20px;
 }
