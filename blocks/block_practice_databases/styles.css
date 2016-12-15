@@ -8,20 +8,22 @@
 	width: 970px;
 	font-size: 11pt;
 }
-#hi {
-	width: 20%;
-	display: inline-block;
-}
 
 header	{
 	background-color: #f1f1f1;
+}
+
+#hi {
+	width: 25%;
+	height: 150px;
+	display: inline-block;
 }
 
 h1	{
 	font-size: 14pt;
 	display: inline-block;
 	text-align: right;
-	width: 75%;
+	width: 95%;
 	position: relative;
 	bottom: 30px;
 }
@@ -78,7 +80,6 @@ img {
 #details {
     width: 970px;
     height: 300px;
-    background: green;
     position: relative;
     top: 40px;
     left: 10px;
