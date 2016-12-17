@@ -5,15 +5,14 @@
 // How much was the reward after 30 days?
 // remember, a penny isn't 1, but 0.01
 
-var days = 0;
-var total = 0;
 var pennies = .01;
+var total = 0;
 
-for (pennies; days < 31; days = days + 1)
- {
-    console.log(pennies + " on day " + days);
-    pennies = pennies + pennies;
-    total = total + pennies;
+for (days = 0; days < 31; days++) {
+  console.log(pennies + " on day " + days);
+  pennies = pennies + pennies;
+  total = total + pennies;
 }
 
 console.log("The total paid after " + (days-1) + " days is:" + total);
+
