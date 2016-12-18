@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 40px;
+}
+
+img {
+	display: block;
+	padding: 1px;
+}
+
+.ninjas {
+	display: none;
+}
