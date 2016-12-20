@@ -1,4 +1,194 @@
+/*Built for minimum screen width 970px - I started to convert things to percentages to make it responsive but I do not have time to change everything to make it 100% responsive!*/
+
 * {
-	padding: 0;
-	margin: 0;
+	padding: 0;   /*CSS RESET*/
+	margin: 0;	  /*CSS RESET*/
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: white;
+}
+
+body {
+	background-color: #062134;
+}
+
+main {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+	height: 1000px;
+	background-color: white;
+}
+
+p { 
+	font-size: .9em; 
+}
+
+header {
+	height: 50px;
+}
+
+span {
+	color: #1b99e8;
+}
+
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    right: 0;
+    margin-top: -40px;
+}
+
+ul.topnav li {
+	display: inline-block;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul.topnav a:visited {
+	color: #387099;
+}
+
+#top_content {
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#snowboard {
+	width: 850px;
+}
+
+#middle_content {
+	position: absolute;
+	left: 50%;
+  	transform: translate(-50%);
+	margin-top: 430px;
+	margin-left: 7%;
+	width: 100%;
+}
+
+section {
+	background-color: #1468a8;
+	width: 24%;
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+	height: 240px;
+}
+
+.icon {
+	width: 30px;
+}
+
+h2 {
+	display: inline;
+	font-size: 1.5em;
+}
+
+p {
+	padding-top: 20px;
+}
+
+button {
+	background-color: #198ed8;
+	margin-top: 20px;
+	padding: 10px;
+	width: 40%;
+}
+
+#bottom {
+	position: relative;
+	width: 100%;
+	left: 50%;
+  	transform: translate(-50%);
+  	top: 725px;
+}
+
+#bottom_left {
+	width: 60%;
+	background-color: white;
+	position: relative;
+}
+
+#bottom_left > h2 {
+	color: black;
+	width: 100%;
+	display: block;
+}
+
+#building {
+	display: inline-block;
+	width: 50%;
+}
+
+#bottom_left > p {
+	color: black;
+	display: inline;
+	position: absolute;
+	width: 60%;
+	vertical-align: top;
+	font-size: .7em;
+}
+
+#bottom_right {
+	position: absolute;
+	background-color: white;
+	width: 30%;
+}
+
+#testimonial {
+	color: black;
+	background-color: #daedff;
+	font-style: italic;
+	padding: 20px;
+}
+
+#bottom_right > h2 {
+	color: black;
+}
+
+#testimonial_source {
+	color: black;
+	font-size: .7em;
+}
+
+#learn_more {
+	color: #9db9cd;
+}
+
+ul.bottomnav {
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #daedff;
+    width: 90%;
+    text-align: center;
+	margin-left: 5%;
+}
+
+ul.bottomnav li {
+	display: inline-block;
+}
+
+ul.bottomnav li a {
+    display: inline-block;
+    color: #39729b;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul.bottomnav a:visited {
+	color: #c2dff8;
 }
