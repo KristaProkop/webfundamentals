@@ -2,14 +2,13 @@
 
 * {
 	padding: 0;   /*CSS RESET*/
-	margin: 0;	  /*CSS RESET*/
-	font-family: Helvetica;
-	font-weight: lighter;
-	color: white;
+	margin: 0;	  
 }
 
 body {
 	background-color: #062134;
+	font-family: Helvetica;
+	color: white;
 }
 
 main {
@@ -20,6 +19,9 @@ main {
 	background-color: white;
 }
 
+h1 {
+	font-weight: lighter;
+}
 p { 
 	font-size: .9em; 
 }
@@ -94,6 +96,8 @@ section {
 h2 {
 	display: inline;
 	font-size: 1.5em;
+	font-family: Helvetica;
+	font-weight: lighter;
 }
 
 p {
@@ -102,6 +106,7 @@ p {
 
 button {
 	background-color: #198ed8;
+	color: white;
 	margin-top: 20px;
 	padding: 10px;
 	width: 40%;
