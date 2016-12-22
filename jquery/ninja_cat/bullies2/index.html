@@ -5,28 +5,31 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript">
+
 		$(document).ready(function(){
-			$(function() {
-				$("img")
-				.mouseover(function() { 
-					var src = $(this).attr("src").replace("1.jpg", "2.jpg");
-					$(this).attr("src", src);
-				})
-				.mouseout(function() {
-					var src = $(this).attr("src").replace("2.jpg", "1.jpg");
-					$(this).attr("src", src);
-				});
-			});
+			$( "img" ).hover(
+				function() {
+					$(this).attr("src", function(i, v) {
+						return v.replace("1.jpg", "2.jpg");
+					})
+				}, function() {
+					$(this).attr("src", function(i, v) {
+						return v.replace("2.jpg", "1.jpg");
+					})
+				}
+			);
 		});
+
+		// $(this).attr("src", function(i, v) {
+		//  return v.replace("1.jpg", "2.jpg");
+		//   })
 	</script>
 </head>
 <body>
 	<h1>JQuery Assignment</h1>
 	<div>
-		<img id="blue" alt="bully" src="images/bully_blue1.jpg
-		">
-		<img id="original" alt="bully" src="images/bully_original1.jpg
-		">
+		<img id="blue" alt="bully" src="images/bully_blue1.jpg">
+		<img id="original" alt="bully" src="images/bully_original1.jpg">
 		<img id="green" alt="bully" src="images/bully_green1.jpg
 		">
 		<img id="yellow" alt="bully" src="images/bully_yellow1.jpg
