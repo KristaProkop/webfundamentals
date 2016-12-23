@@ -1,5 +1,3 @@
-/*Built for minimum screen width 970px - I started to convert things to percentages to make it responsive but I do not have time to change everything to make it 100% responsive!*/
-
 * {
 	padding: 0;   /*CSS RESET*/
 	margin: 0;	  
@@ -8,22 +6,6 @@
 body {
 	background-color: #062134;
 	font-family: Helvetica;
-	color: white;
-}
-
-main {
-	width: 90%;
-	margin-left: 5%;
-	margin-top: 10px;
-	height: 1000px;
-	background-color: white;
-}
-
-h1 {
-	font-weight: lighter;
-}
-p { 
-	font-size: .9em; 
 }
 
 header {
@@ -34,6 +16,132 @@ span {
 	color: #1b99e8;
 }
 
+h1	{
+	margin-left: 30px;
+	margin-top: 10px;
+	color: white;
+	font-weight: lighter;
+}
+
+#bottom>section>h2 {
+	font-weight: lighter;
+	font-size: 1.7em;
+}
+
+div {
+	width: 94%;
+	margin: 0 auto;
+	background-color: white;
+	color: white;
+}
+
+#snowboard {
+	position: relative;
+	left: 50%;
+  	transform: translate(-50%);
+  	margin-top: 10px;
+  	width: 95%;
+}
+
+#middle_content {
+	text-align: center;
+}
+	
+.icon {
+	width: 30px;
+	padding-top: 10px;
+}
+
+.middle {
+	position: relative;
+	display: inline-block;
+	height: 200px;
+	width: 29%;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px;
+	background-color:red; 
+	font-size: 10pt;
+	background-color: #1468a8;
+}
+
+#middle_content > section>h2 {
+	display: inline;
+	color: white;
+	font-size: 1.7em;
+	font-weight: lighter;
+}
+
+#middle_content > section>p {
+	margin-top: 10px;
+}
+
+button {
+	background-color: #198ed8;
+	color: white;
+	font-weight: lighter;
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+#bottom {
+	padding-top: 20px;
+}
+
+#bottom_left {
+	position: relative;
+	display: inline-block;
+	width: 60%;
+	left: 30px;
+	color: black;
+}
+
+#building {
+	width: 40%;
+}
+
+#bottom>#bottom_left>p {
+	display: inline-block;
+	width: 55%;
+	font-size: 9pt;
+	vertical-align: top;
+}
+
+#learn_more {
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	margin-left: 50%;
+}
+
+#bottom_right {
+	position: absolute;
+	display: inline-block;
+	width: 25%;
+	margin-left: 70px;
+	color: black;
+}
+
+#bottom_right>p {
+	font-size: 10pt;
+	margin-top: 20px;
+}
+
+#testimonial {
+	background-color: #daedff;
+	width: 100%;
+	margin-left: 10px;
+	padding: 5px;
+	font-style: italic;
+}
+
+#testimonial_source {
+	margin-top: 20px;
+}
+
+
 ul.topnav {
     list-style-type: none;
     overflow: hidden;
@@ -41,7 +149,8 @@ ul.topnav {
     position: absolute;
     margin-left: 20px;
     right: 0;
-    margin-top: -40px;
+    margin-top: -45px;
+    margin-right: 10px;
 }
 
 ul.topnav li {
@@ -60,126 +169,14 @@ ul.topnav a:visited {
 	color: #387099;
 }
 
-#top_content {
-  position: absolute;
-  margin-top: 20px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-#snowboard {
-	width: 850px;
-}
-
-#middle_content {
-	position: absolute;
-	left: 50%;
-  	transform: translate(-50%);
-	margin-top: 430px;
-	margin-left: 7%;
-	width: 100%;
-}
-
-section {
-	background-color: #1468a8;
-	width: 24%;
-	padding: 20px;
-	position: relative;
-	display: inline-block;
-	height: 240px;
-}
-
-.icon {
-	width: 30px;
-}
-
-h2 {
-	display: inline;
-	font-size: 1.5em;
-	font-family: Helvetica;
-	font-weight: lighter;
-}
-
-p {
-	padding-top: 20px;
-}
-
-button {
-	background-color: #198ed8;
-	color: white;
-	margin-top: 20px;
-	padding: 10px;
-	width: 40%;
-}
-
-#bottom {
-	position: relative;
-	width: 100%;
-	left: 50%;
-  	transform: translate(-50%);
-  	top: 725px;
-}
-
-#bottom_left {
-	width: 60%;
-	background-color: white;
-	position: relative;
-}
-
-#bottom_left > h2 {
-	color: black;
-	width: 100%;
-	display: block;
-}
-
-#building {
-	display: inline-block;
-	width: 50%;
-}
-
-#bottom_left > p {
-	color: black;
-	display: inline;
-	position: absolute;
-	width: 60%;
-	vertical-align: top;
-	font-size: .7em;
-}
-
-#bottom_right {
-	position: absolute;
-	background-color: white;
-	width: 30%;
-}
-
-#testimonial {
-	color: black;
-	background-color: #daedff;
-	font-style: italic;
-	padding: 20px;
-}
-
-#bottom_right > h2 {
-	color: black;
-}
-
-#testimonial_source {
-	color: black;
-	font-size: .7em;
-}
-
-#learn_more {
-	color: #9db9cd;
-}
-
 ul.bottomnav {
     list-style-type: none;
     overflow: hidden;
-    display: inline-block;
+    display: block;
     background-color: #daedff;
-    width: 90%;
     text-align: center;
-	margin-left: 5%;
+	bottom: 0;
+	border: 1px solid #8c98a1;
 }
 
 ul.bottomnav li {
