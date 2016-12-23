@@ -1,0 +1,89 @@
+<!-- Build a simple page using both an accordion and a tab widget. Get comfortable with inserting markup correctly into jQueryUI elements. Pay attention to how jQueryUI examples utilize the class and id attributes.
+
+Once you have built your page, find a new jQueryUI element and add it to your page.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More Jquery UI Practice</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$( ".accordion" ).accordion({collapsible: true, active: false});
+			$( ".tabs" ).tabs();
+		    $( "#slider" ).slider({
+		      value:5,
+		      min: 1,
+		      max: 10,
+		      step: 1,
+		      slide: function( event, ui ) {
+		        $( "#amount" ).val( ui.value );
+		      }
+		    });
+		    $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+		  
+		  $(document).on('click', '#slider', function(){
+		  	if ($( "#slider" ).slider( "value" ) < 5){
+		  		$("#message").fadeIn('slow').animate({opacity: 1.0}, 1500).fadeOut('slow');
+		  	}
+		  });
+		});
+		</script>
+</head>
+<body>
+		<div class="accordion">
+			<h1>Box One</h1>
+			<div>
+				<p>This is my first box.</p>
+			</div>
+			<h1>Box Two</h1>
+			<div>
+				<p>This is my second box.</p>
+				<div class="accordion">
+				<h2>is it possible to add a Sub-Collapsible element?</h2>
+					<div>
+						See if we can hide this too.
+					</div>
+				</div>
+			</div>
+		
+			<h1>Box Three</h1>
+			<div>
+				<p>This is my third box.</p>
+			</div>
+		</div>
+
+		<div class="tabs">
+			<ul>
+				<li><a href="#tabs-1">Tab One</a></li>
+				<li><a href="#tabs-2">Tab Two</a></li>
+				<li><a href="#tabs-3">Tab Three</a></li>
+			</ul>
+			
+			<div id="tabs-1">
+				<h1>Box One</h1>
+				<p>This is my first box.</p>
+			</div>
+			
+			<div id="tabs-2">
+				<h1>Box Two</h1>
+				<p>This is my second box.</p>
+			</div>
+			
+			<div id="tabs-3">
+				<h1>Box Three</h1>
+				<p>This is my third box.</p>
+			</div>
+		</div>
+		<p id="slide_section">
+	  		<label for="amount">How do you rate this page:</label>
+	  		<input type="text" id="amount" readonly>
+		</p>
+		<div id="slider"></div>
+
+		<p id="message">Wow that's harsh</p>
+</body>
+</html>
