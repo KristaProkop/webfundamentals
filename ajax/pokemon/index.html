@@ -26,8 +26,8 @@ $wrapper.find('img').sort(function (a, b) {
 			$(this).attr("class",'active').appendTo('#details');
 			var url = ("http://pokeapi.co/api/v1/pokemon/" + $(this).attr('id'))
 			$.get(url, function(res) {
-			    $('#details').append("<h4> <strong>Name: </strong> " + res.name + "</h3>");
-			    $('#details').append("<h4> <strong>Height: </strong>" + res.height + "</h3>");
+			    $('#details').append("<h4> <strong>Name: </strong> " + res.name + "</h4>");
+			    $('#details').append("<h4> <strong>Height: </strong>" + res.height + "</h>");
 			    $('#details').append("<h4> <strong>Weight: </strong>" + res.weight + "</h4>");
 			    $('#details').append("<h4> <strong>Types:</strong> </h4> <ul>");
 			    for (index = 0; index < res.types.length; index++ ) {

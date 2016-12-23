@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather API</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('form').submit(function() {
+        			var url = ('http://api.openweathermap.org/data/2.5/weather?q=' +  $('#location').val()  + '&&appid=' + '85cee16b7ecee2bdf8ba65f24dfe8fdd')
+         			$.get(url, function(res){
+						$('body').append("<h4> " + res.name + "</h4>");
+        				var farenheight = (Math.round(( res.main.temp - 273.15) * 9/5) + 32);
+						$('body').append("<h3> Temperature: " + farenheight + "</h3>");
+						$('body').append("<h2>" + res.weather[0].description + "<h2>");
+						console.log(res);
+					}, "json")
+
+        		return false;
+    });
+});
+		</script>
+
+</head>
+<body>
+
+	<form>
+		<input id='location' type="text" name="location">
+		<input  type="submit" name="search" value="Search Weather">
+	</form>
+
+
+</body>
+</html>
