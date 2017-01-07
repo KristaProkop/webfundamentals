@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DATA VALIDATIONS</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				var name = $('#name').val();
+				var from = $('#from').val();
+				var to = $('#to').val();
+					if (to > from)	 {
+		 	 			if(name && from && to) {
+		 	 				$('p').remove();
+							alert('Thanks ' + name + '! Your cruise leaves on ' + from + ' and returns on ' + to + '.')
+		 	 			}
+		 	 			if(name == false) {
+		 	 				$('form').append('<p>You must enter a name</p>')	
+		 	 			}
+		 	 		}
+		 	 		else {
+		 	 			alert('Please check your travel dates')
+		 	 		}
+			});
+		});
+	</script>
+	<script> 
+		$( function() {
+	    	$( ".datepicker" ).datepicker();
+	  	} );
+	 </script>
+</head>
+<body>
+	<h1>Welcome to the Coding Dojo Plan-A-Cruise!</h1>
+	<form onsubmit="return false;">
+		<input id="from" class="datepicker" type="Dates" placeholder="From:">
+		<input id="to" class="datepicker" type="Dates" placeholder="To:">
+		<input id="name" type="name" placeholder="Name:">
+		<button type="submit" name="submit">Check Dates!</button>
+	</form>
+</body>
+</html>
